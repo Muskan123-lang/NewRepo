@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="container">
+  <div>
+    <a (click)="gotolist()" class="back">Back</a>
+<div>
+  <h6 class="para">Add New Record</h6>
+<br>
+<div class="cards-container">
+    <div class="cards-form">
+      <form #form="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="">RollNo.</label>
+          <input type="number" name="RollNo" [(ngModel)]="submitdata.rollNo">
+        </div>
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" name="Name" [(ngModel)]="submitdata.name">
+        </div>
+        <div class="form-group">
+          <label for="">DOB</label>
+          <input type="date" name="cardDOB" [(ngModel)]="submitdata.dateOfBirth">
+        </div>
+        <div class="form-group">
+          <label for="">Score</label>
+          <input type="number" name="Score" [(ngModel)]="submitdata.score">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-outline-dark">Clear</button>
+        </div>
+      </form>
+    </div>
+</div>
+</div>

@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="list">
+  <div><button class="btn btn-primary" (click)="addrecord()">Add Record</button></div>
+  <br>
+  <h6>Total {{studentdata.length}} Students</h6>
+  <table class="table table-striped" border="1">
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Score</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of studentdata">
+        <td>
+          {{item.rollNo}}
+        </td>
+        <td>
+          {{item.name}}
+        </td>
+        <td>
+          <p>{{item.dateOfBirth}}</p>
+        </td>
+        <td>
+          {{item.score}}
+        </td>
+        <td>
+          <a (click)="populateFrom(item,item.rollNo)"><i   class="fa fa-pencil" aria-hidden="true"></i> </a>
+          <a (click)="ondelete(item.rollNo)" ><i  class="fa fa-trash-o" aria-hidden="true"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+
+

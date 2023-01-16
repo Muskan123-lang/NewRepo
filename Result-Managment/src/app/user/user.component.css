@@ -1,0 +1,32 @@
+.hader
+{
+    text-align: center;
+    background-color: lightgreen;
+    margin: -2% -2%;
+    padding: 3%;
+}
+.container{
+    text-align: center;
+    margin-top: 12%;
+  }
+  
+  h2{
+   
+    text-align: center;
+  }
+  
+  .btn{
+    padding: 0.5%;
+    margin: 1.5%;
+    width: 9%;
+  }
+  .main-body
+  {
+    text-align: -webkit-center;
+    margin-top: 15%;
+   
+  }
+ 
+
+  
+  

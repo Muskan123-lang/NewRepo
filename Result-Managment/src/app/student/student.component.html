@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div>
+   
+  <h6 class="para">Find Result</h6>
+ 
+<br>
+<div class="cards-container">
+    <div class="cards-form">
+      <form #form="ngForm" (ngSubmit)="getResult(submitdata.rollNo,submitdata.name)">
+        <div class="form-group">
+          <label for="">RollNo</label>
+          <input type="number" name="RollNo" [(ngModel)]="submitdata.rollNo" >
+        </div>
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" name="Name" [(ngModel)]="submitdata.name">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-outline-dark">Reset</button>
+        </div>
+      </form>
+    </div>
+
+</div>

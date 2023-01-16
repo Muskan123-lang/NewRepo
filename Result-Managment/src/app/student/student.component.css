@@ -1,0 +1,21 @@
+.para{
+  margin-top: 14%;
+  margin-left: 30%;
+}
+.back{
+  margin-top: 2%;
+  margin-left: 4%;
+}
+
+.cards-form{
+  text-align: center;
+}
+
+.form-group{
+  padding: 5px;
+}
+
+.btn{
+  border-radius: 13px;
+  margin: 8px;
+}
